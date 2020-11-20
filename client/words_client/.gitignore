@@ -1,0 +1,14 @@
+.DS_Store
+.merlin
+.bsb.lock
+npm-debug.log
+/lib/bs/
+/node_modules/
+/bundleOutput/
+_build
+_esy
+esy.lock
+package-lock.json
+*.bs.js
+yarn.lock
+yarn-error.log

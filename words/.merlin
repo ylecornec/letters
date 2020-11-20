@@ -1,0 +1,15 @@
+PKG lwt_ppx
+PKG eliom.server
+PKG eliom.ppx.server
+PKG ppx_deriving.show
+PKG ppx_deriving.ord
+PKG ppx_deriving_yojson
+PKG ocsigen-toolkit.server
+PKG ocsigen-start.server
+PKG pgocaml_ppx
+
+SUFFIX .eliom .eliomi
+
+S .
+
+B _server
