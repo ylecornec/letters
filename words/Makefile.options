@@ -61,17 +61,19 @@ USE_NPM               := yes
 ## The following part contains the configuration for the ocsigenserver.
 
 # User to run server with (make run.*)
-WWWUSER               := www-data
-WWWGROUP              := www-data
+#WWWUSER               := www-data
+#WWWGROUP              := www-data
+WWWUSER               := postgres
+WWWGROUP              := postgres
 
 # Port for running the server (make run.*)
-PORT                  := 80
+PORT                  := 8080
 
 # Port for testing (make test.*)
 TEST_PORT             := 8080
 
 # Root of installation (must end with /)
-PREFIX                := /usr/local/
+PREFIX                := /usr/local/ocsigen/
 
 # Local folder for make test.* (must end with /)
 TEST_PREFIX           := local/
@@ -110,6 +112,7 @@ ELIOMSTATICDIR        := var/www/${PROJECT_NAME}
 LOCAL_STATIC          := static
 LOCAL_STATIC_CSS      := $(LOCAL_STATIC)/css
 LOCAL_STATIC_IMAGES      := $(LOCAL_STATIC)/images
+LOCAL_STATIC_JS      := $(LOCAL_STATIC)/js
 LOCAL_STATIC_FONTS      := $(LOCAL_STATIC)/fonts
 # Default CSS if not using SASS:
 LOCAL_STATIC_DEFAULTCSS      := $(LOCAL_STATIC)/defaultcss
@@ -215,13 +218,13 @@ MOBILE_NOTIFICATIONS_SENDER_ID := 424242424242
 ## The following part is only used for PGOcaml (ie for the database).
 
 ## The host database.
-DB_HOST               := 35.195.172.158
+#DB_HOST               := 0.0.0.0
 
 ## The port of the database server
-DB_PORT               := 5432
+#DB_PORT               := 5432
 
 ## The database name for the project. By default, it's the project name.
-DB_NAME               := words
+#DB_NAME               := words
 
 ## The database user. By default, it will use the username of the current user.
 DB_USER               := postgres

@@ -41,7 +41,7 @@ let%shared reason_react_script =
   let open Eliom_content.Html.D in
   js_script
     ~uri:(make_uri (Eliom_service.static_dir ())
-            ["words_client/bundleOutput/index.js"])
+            ["js";"index.js"])
     ()
 
 (* let%client init_client () =
