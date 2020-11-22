@@ -8,7 +8,6 @@ npm-debug.log
 _build
 _esy
 esy.lock
-package-lock.json
 *.bs.js
 yarn.lock
 yarn-error.log
